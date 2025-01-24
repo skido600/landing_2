@@ -1,4 +1,4 @@
-// import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Last_Footer: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const Last_Footer: React.FC = () => {
             Designed by Amena @ Musais <span className="animate-pulse">👨‍🍳</span>
           </p>
           <div>
-            {/* <div className="flex items-center mt-2 justify-center">
+            <div className="flex items-center mt-2 justify-center">
               <a
                 href="https://x.com/AmenaiSabuwala"
                 target="_blank"
@@ -22,7 +22,7 @@ const Last_Footer: React.FC = () => {
                 <p>connect with designer on </p>
                 <FaXTwitter size={20} />
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
       </footer>

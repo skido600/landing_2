@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
   return (
     <>
       <main className="bg-[#2F1F14] mt-[-10px] px-4 ">
-        <section className="md:flex items-center justify-between">
+        <section className="md:flex items-center pt-3 justify-between">
           <div className="text-white ">
             <motion.h1
               initial="hidden"

@@ -12,14 +12,14 @@ const Nav: React.FC = () => {
   const handleClick = (index: number) => setActiveIndex(index);
 
   return (
-    <nav className="flex justify-between md:justify-start bg-[#2F1F14] items-center md:px-14 px-8">
+    <nav className="flex justify-between md:justify-start bg-[#2F1F14] items-center md:px-14 px-4">
       {/* Logo */}
       <div>
         <Image
           src="/svg/Borcelle__2_-removebg-preview 1.svg"
           alt="hero_image"
-          width={100}
-          height={100}
+          width={110}
+          height={110}
         />
       </div>
 
