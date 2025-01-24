@@ -5,6 +5,10 @@ export default {
   theme: {
     fontFamily: {
       inter: ["Inter", "serif"],
+      Pompiere: ["Pompiere", "serif"],
+      Galada: ["Galada", "serif"],
+      Poppins: ["Poppins", "serif"],
+      montserrat: ["Montserrat", "serif"],
     },
   },
   plugins: [],
