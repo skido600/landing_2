@@ -1,5 +1,8 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "motion/react";
+
 const Reviews: React.FC = () => {
   interface review {
     comment: string;
@@ -25,7 +28,7 @@ const Reviews: React.FC = () => {
 
   return (
     <>
-      <main className="bg-[#655546] p-2">
+      <main className="bg-[#655546] px-4 py-2">
         <section>
           <div className="text-center">
             <div className="flex items-center gap-x justify-center">
@@ -43,19 +46,25 @@ const Reviews: React.FC = () => {
               What other people are saying!
             </p>
           </div>
-          <article className="grid md:grid-cols-3 gap-y-4 mt-12 gap-x-6">
+          <motion.article className="grid md:grid-cols-3 gap-y-4 mt-12 gap-x-6">
             {review.map((item, index) => (
-              <>
-                <section
-                  key={index}
-                  className="bg-[#DBBCA1] rounded-lg font-Poppins px-4 py-2 text-center"
-                >
-                  <p>{item.comment}</p>
-                  <p className="text-[#0A424F] mt-4">{item.commented}</p>
-                </section>
-              </>
+              <motion.section
+                key={index}
+                whileHover={{
+                  scale: 0.8,
+                  transition: { duration: 0.2 },
+                }}
+                whileTap={{
+                  scale: 0.8,
+                  transition: { duration: 0.2 },
+                }}
+                className="bg-[#DBBCA1] rounded-lg font-Poppins px-4 py-2 text-center"
+              >
+                <p className="text-[15px]">{item.comment}</p>
+                <p className="text-[#0A424F] mt-4">{item.commented}</p>
+              </motion.section>
             ))}
-          </article>
+          </motion.article>
         </section>
       </main>
     </>

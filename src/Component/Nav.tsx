@@ -25,7 +25,7 @@ const Nav: React.FC = () => {
 
       {/* Menu */}
       <div
-        className={`md:bg-[#6F4436]  bg-[#2F1F14] top-0 right-0 bottom-0 md:relative fixed 
+        className={`md:bg-[#6F4436] z-10  bg-[#2F1F14] top-0 right-0 bottom-0 md:relative fixed 
         md:translate-x-0 px-6 py-2 md:rounded-lg transition-transform duration-300 transform 
         ${
           toggle ? "translate-x-0 " : "translate-x-full"
