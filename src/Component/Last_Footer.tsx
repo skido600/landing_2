@@ -3,7 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 const Last_Footer: React.FC = () => {
   return (
     <>
-      <footer className="bg-[#FDF8ECBD] font-Poppins px-4 text-center  mt-4">
+      <footer className="bg-[#FDF8ECBD] font-Poppins px-4 text-center pb-6  pt-4">
         <p className="font-inter">
           Copyright {new Date().getFullYear()} All Rights Reserved Company Name.
         </p>
