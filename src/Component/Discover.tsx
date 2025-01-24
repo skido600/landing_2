@@ -88,7 +88,7 @@ const Discover: React.FC = () => {
                 }}
                 transition={{ duration: 0.5, delay: 1.6 }}
                 ref={pRefFour}
-                className="mt-4 md:text-[15px] text-[13px]"
+                className="mt-4 md:text-[15px] font-inter text-[13px]"
               >
                 With expert craftsmanship and a commitment to quality, Join us
                 in savoring the art of coffee, one cup at a time.
@@ -103,7 +103,7 @@ const Discover: React.FC = () => {
                 }}
                 transition={{ duration: 0.5, delay: 2.0 }}
                 ref={btn}
-                className="bg-[#2F1F14] px-12 py-2 text-white "
+                className="bg-[#2F1F14] px-12 py-2 text-white font-inter "
               >
                 Read More
               </motion.button>

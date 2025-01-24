@@ -1,18 +1,18 @@
-import { FaXTwitter } from "react-icons/fa6";
+// import { FaXTwitter } from "react-icons/fa6";
 
 const Last_Footer: React.FC = () => {
   return (
     <>
-      <footer className="bg-[#FDF8ECBD] font-Poppins px-4 text-center py-4 mt-4">
+      <footer className="bg-[#FDF8ECBD] font-Poppins px-4 text-center  mt-4">
         <p className="font-inter">
           Copyright {new Date().getFullYear()} All Rights Reserved Company Name.
         </p>
-        <div className="mt-4">
+        <div className="mt-2">
           <p>
             Designed by Amena @ Musais <span className="animate-pulse">👨‍🍳</span>
           </p>
           <div>
-            <div className="flex items-center mt-4 justify-center">
+            {/* <div className="flex items-center mt-2 justify-center">
               <a
                 href="https://x.com/AmenaiSabuwala"
                 target="_blank"
@@ -22,7 +22,7 @@ const Last_Footer: React.FC = () => {
                 <p>connect with designer on </p>
                 <FaXTwitter size={20} />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>
