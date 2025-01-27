@@ -19,7 +19,7 @@ const Nav: React.FC = () => {
     }
   }, [toggle]);
   return (
-    <nav className="flex justify-between md:justify-start bg-[#2F1F14] items-center md:px-14 px-4">
+    <nav className="flex justify-between md:justify-start bg-[#2F1F14] items-center md:px-14 px-[0.6rem]">
       {/* Logo */}
       <div>
         <Image
