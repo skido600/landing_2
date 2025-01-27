@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
 
@@ -11,6 +11,13 @@ const Nav: React.FC = () => {
   const handleToggle = () => setToggle((prev) => !prev);
   const handleClick = (index: number) => setActiveIndex(index);
 
+  useEffect(() => {
+    if (toggle) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [toggle]);
   return (
     <nav className="flex justify-between md:justify-start bg-[#2F1F14] items-center md:px-14 px-4">
       {/* Logo */}
@@ -27,12 +34,18 @@ const Nav: React.FC = () => {
       <main
         className={`fixed   ${
           toggle ? "translate-x-0 " : "translate-x-full"
-        }  md:translate-x-0  z-10 transition-transform duration-300 transform  top-0 right-0 bottom-0 md:relative bg-[#06141799] backdrop-blur-sm w-full`}
+        }  md:translate-x-0  z-10 transition-transform duration-300 transform  top-0 right-0 bottom-0 md:relative  md:bg-transparent md:w-auto  w-full`}
       >
+        {/* using self closing div */}
+        <div
+          className="absolute inset-0 bg-[#06141799] backdrop-blur-sm md:hidden"
+          onClick={handleToggle}
+        />
+        {/* ending self closing div */}
         <div
           className={`md:bg-[#6F4436]   bg-[#2F1F14] top-0 right-0 bottom-0 md:relative fixed 
-      px-6 py-2 md:rounded-lg 
-        md:space-y-0 space-y-8  lg:ml-[8rem] `}
+          px-6 py-2 md:rounded-lg 
+          md:space-y-0 space-y-8  lg:ml-[8rem] `}
         >
           {/* Close Icon */}
           <div className="md:hidden" onClick={handleToggle}>
